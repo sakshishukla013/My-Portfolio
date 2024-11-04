@@ -1,0 +1,187 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212; /* Very dark background */
+    color: #e0e0e0; /* Light gray text */
+    line-height: 1.8;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background-color: #fdfcfcw; /* Dark header background */
+    padding: 0rem 0;
+    position: fixed; /* Fixed header */
+    top: 0; /* At the very top */
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Soft light shadow */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+}
+
+nav ul li {
+    margin: 1.1rem;
+}
+
+nav ul li a {
+    color: #ff1493; /* Bright pink for links */
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff69b4; /* Lighter pink on hover */
+    transform: translateY(-2px);
+}
+
+/* Home Section */
+.header-container {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding: 0rem 0rem;
+}
+
+.intro {
+    margin-right: 50px; /* Space between the intro text and the image */
+    text-align: left; /* Align text to the left */
+}
+
+.intro h2 {
+    color: #ff69b4; /* Lighter pink for heading */
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    color: #e0e0e0; /* Light gray for paragraph */
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.header-background {
+    width: 400px; /* Adjust the size as needed */
+    height: 400px; /* Adjust the size as needed */
+}
+
+.header-background img {
+    width: 80%; /* Make the image responsive */
+    height: max-content; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: make the image circular */
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    background-color: #1f1f1f; /* Dark button background */
+    color: #e0e0e0; /* Light gray text */
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: 2px solid #ff1493; /* Bright pink border */
+}
+
+.button:hover {
+    background-color: #ff1493; /* Bright pink on hover */
+    color: #1f1f1f; /* Dark text */
+    transform: translateY(-4px);
+}
+
+/* Sections */
+section {
+    padding: 2rem 2rem;
+    text-align: center;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Skills Section */
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.skill-list li {
+    background-color: #2a2a2a; /* Darker background for skill badges */
+    color: #ff1493; /* Bright pink text */
+    padding: 0.7rem 1.2rem;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.skill-list li:hover {
+    background-color: #ff1493; /* Bright pink on hover */
+    color: #2a2a2a; /* Dark text */
+    transform: translateY(-4px);
+}
+
+/* Projects Section */
+.project {
+    background-color: #1f1f1f; /* Dark background for projects */
+    border: 1px solid #ff1493; /* Bright pink border */
+    padding: 2.5rem;
+    margin: 1.5rem 0;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Soft light shadow */
+}
+
+.project:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2); /* Stronger shadow on hover */
+}
+
+.project h3 {
+    color: #ff69b4; /* Lighter pink for project titles */
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+}
+
+/* Contact Section */
+#contact p {
+    font-size: 1.1rem;
+    color: #ff69b4; /* Lighter pink for contact text */
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; /* Stack elements on smaller screens */
+        text-align: center; /* Center text */
+    }
+
+    .header-background {
+        margin: 0; /* Remove margin for mobile view */
+    }
+
+    .intro {
+        margin: 0; /* Remove right margin */
+    }
+
+    .intro h2 {
+        font-size: 2rem; /* Consistent size for mobile */
+    }
+}
